@@ -174,7 +174,7 @@ public class Carro {
         
     }
     
-    public void passarMarcha(){
+    /*public void passarMarcha(){
         if(cambio < 6){
             cambio += 1;
             return;
@@ -188,6 +188,84 @@ public class Carro {
             return;
         }
         System.out.println("A marcha já está no mínimo.");
+    }*/
+
+    public void passarMarcha(){
+        if(cambio == 0 && velocidade == 0){
+	        cambio += 1;
+            System.out.println("A marcha esta em: " + cambio);
+            return;
+       }
+       if(cambio == 1 && velocidade == 20){
+            cambio += 1;
+            System.out.println("A marcha esta em: " + cambio);
+            return;
+       }
+      if(cambio == 2 && velocidade == 40){
+            cambio += 1;
+            System.out.println("A marcha esta em: " + cambio);
+            return;
+       }
+      if(cambio == 3 && velocidade == 60){
+            cambio += 1;
+            System.out.println("A marcha esta em: " + cambio);
+            return;
+       }
+       if(cambio == 4 && velocidade == 80){
+	        cambio += 1;
+	        System.out.println("A marcha esta em:" + cambio);
+            return;
+       }
+       if(cambio == 5 && velocidade == 100){
+	        cambio += 1;
+	        System.out.println("A marcha esta em: " + cambio);
+            return;
+       }
+       if(cambio == 6){
+	        cambio += 1;
+	        System.out.println("A marcha já está no máximo.");
+            return;
+       }
+       System.out.println("A marcha só pode ser se aumentar a velocidade.");
+    }
+
+    public void voltarmarcha(){
+        if(cambio == 1 && velocidade == 0){
+	        cambio -= 1;
+            System.out.println("A marcha esta em: " + cambio);  
+            return;
+       }
+       if(cambio == 2 && velocidade == 20){
+	        cambio -= 1;
+            System.out.println("A marcha esta em: " + cambio);
+            return;
+       }
+       if(cambio == 3 && velocidade == 40){
+	        cambio -= 1;
+            System.out.println("A marcha esta em: " + cambio);
+            return;
+       }
+       if(cambio == 4 && velocidade == 60){
+	        cambio -= 1;
+            System.out.println("A marcha esta em: " + cambio);
+            return;
+       }
+       if(cambio == 5 && velocidade == 80){
+	        cambio -= 1;
+            System.out.println("A marcha esta em: " + cambio);
+            return;
+       }
+       if(cambio == 6 && velocidade == 100){
+	        cambio -= 1;
+            System.out.println("A marcha esta em: " + cambio);
+            return;
+       }
+       if(cambio == 0){
+            System.out.println("A marcha já está no mínimo.");
+            return;
+        }
+        System.out.println("A marcha só pode se diminuir a velocidade.");
+        
     }
 
     public void virarDireita(){

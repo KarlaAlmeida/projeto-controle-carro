@@ -45,7 +45,7 @@ public class ControleCarro {
                 System.out.println("0 - sair.");
 
                 option2 = scanner.nextInt();
-                System.out.println("A opção escolhida foi " + option2);
+                //System.out.println("A opção escolhida foi " + option2);
 
                 switch (option2) {
                     case 1 -> carro.aumentarVelocidade();
